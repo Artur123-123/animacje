@@ -1,0 +1,51 @@
+.zdjecie {
+    width: 620px;
+    height: 827px;
+    border: 2px solid black;
+    margin-top: 30px;
+    padding: 20px;
+    animation-name: kocur;
+    animation-duration: 5s;
+    animation-timing-function: ease-out;
+}
+
+@keyframes kocur {
+    from {
+        width: 620px;
+        height: 827px;
+        border: 2px solid black;
+        margin-top: 30px;
+        padding: 20px;
+    }
+    to {
+        width: 80px;
+        height: 50px;
+    }
+}
+
+.box {
+    overflow: auto;
+    width: 620px;
+    height: 827px;
+    box-sizing: border-box;
+}
+
+img {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+img:hover {
+    transform: scale(1, 5);
+}
+
+@keyframes kocur {
+    from {
+        height: 50%;
+        width: 50%;
+    }
+    to {
+        transform: scale(1, 5);
+    }
+}
